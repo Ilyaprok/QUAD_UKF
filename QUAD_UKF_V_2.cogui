@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<workbenchAdvisor/>
+<window>
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.coocox.component.ui.ComponentView"/>
+<orientation position="512" view="org.coocox.builder.ui.views.ProjectView"/>
+<orientation position="512" view="org.coocox.codebugger.trace.ui.traceview"/>
+<orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
+<orientation position="512" view="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
+</fastViewData>
+<perspectiveBar/>
+<page focus="true" label="Workspace - CooCox CoBuilder">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
+<part id="32"/>
+<part id="33"/>
+<part id="34"/>
+<part id="35"/>
+<part id="36"/>
+<part id="37"/>
+<part id="38"/>
+<part id="39"/>
+<part id="40"/>
+<part id="41"/>
+<part id="42"/>
+<part id="43"/>
+<part id="44"/>
+<part id="45"/>
+<part id="46"/>
+<part id="47"/>
+<part id="48"/>
+<part id="49"/>
+<part id="50"/>
+<part id="51"/>
+<part id="52"/>
+<part id="53"/>
+<part id="54"/>
+<part id="55"/>
+<part id="56"/>
+<part id="57"/>
+<part id="58"/>
+<part id="59"/>
+<part id="60"/>
+<part id="61"/>
+<part id="62"/>
+<part id="63"/>
+<part id="64"/>
+<part id="65"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" partName="stm32f4xx_conf.h" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/stm32f4xx_conf.h" title="stm32f4xx_conf.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/stm32f4xx_conf.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx_conf.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="204"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/Programming/STM32F407/11QUAD_UKF/main.c" title="main.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4715" selectionTopPixel="2573"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6500.c" partName="MPU6500.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/MPU6500.c" title="MPU6500.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/MPU6500.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/MPU6500.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4603" selectionTopPixel="1275"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Config.h" partName="Config.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/Config.h" title="Config.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/Config.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/Config.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="905" selectionTopPixel="1026"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="I2C_BARO_MAG.c" partName="I2C_BARO_MAG.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/I2C_BARO_MAG.c" title="I2C_BARO_MAG.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/I2C_BARO_MAG.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/I2C_BARO_MAG.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="26588" selectionTopPixel="5633"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="I2C_BARO_MAG.h" partName="I2C_BARO_MAG.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/I2C_BARO_MAG.h" title="I2C_BARO_MAG.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/I2C_BARO_MAG.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/I2C_BARO_MAG.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="172" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MPU6500.h" partName="MPU6500.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/MPU6500.h" title="MPU6500.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/MPU6500.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/MPU6500.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="95" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="IMU_INS.h" partName="IMU_INS.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/IMU_INS.h" title="IMU_INS.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/IMU_INS.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/IMU_INS.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="158" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="USART_TELEMETRY.c" partName="USART_TELEMETRY.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/USART_TELEMETRY.c" title="USART_TELEMETRY.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/USART_TELEMETRY.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/USART_TELEMETRY.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3702" selectionTopPixel="1519"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="USART_TELEMETRY.h" partName="USART_TELEMETRY.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/USART_TELEMETRY.h" title="USART_TELEMETRY.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/USART_TELEMETRY.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/USART_TELEMETRY.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1012" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" partName="stm32f4xx.h" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/stm32f4xx.h" title="stm32f4xx.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/stm32f4xx.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx.h"/>
+<editorState selectionHorizontalPixel="16" selectionLength="9" selectionOffset="114178" selectionTopPixel="27880"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="GPS.h" partName="GPS.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/GPS.h" title="GPS.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/GPS.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/GPS.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="974" selectionTopPixel="516"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="GPS.c" partName="GPS.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/GPS.c" title="GPS.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/GPS.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/GPS.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9039" selectionTopPixel="4749"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="plugs.c" partName="plugs.c" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/plugs.c" title="plugs.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/plugs.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/plugs.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="974" selectionTopPixel="57"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="plugs.h" partName="plugs.h" path="G:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/plugs.h" title="plugs.h" tooltip="G:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/plugs.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/plugs.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ADC.c" partName="ADC.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/ADC.c" title="ADC.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/ADC.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/ADC.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8345" selectionTopPixel="1587"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ADC.h" partName="ADC.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/ADC.h" title="ADC.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/ADC.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/ADC.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1333" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="PWM_PPM.c" partName="PWM_PPM.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PWM_PPM.c" title="PWM_PPM.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PWM_PPM.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/PWM_PPM.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="1004" selectionTopPixel="306"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="PWM_PPM.h" partName="PWM_PPM.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PWM_PPM.h" title="PWM_PPM.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PWM_PPM.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/PWM_PPM.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1567" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="task.h" partName="task.h" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/task.h" title="task.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/task.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/task.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="38" selectionOffset="62521" selectionTopPixel="25857"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/Programming/STM32F407/11QUAD_UKF/main.c" title="main.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5959" selectionTopPixel="680"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="core_cmFunc.h" partName="core_cmFunc.h" path="G:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/core_cmFunc.h" title="core_cmFunc.h" tooltip="G:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/core_cmFunc.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/core_cmFunc.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12246" selectionTopPixel="7123"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="UKF_lib.c" partName="UKF_lib.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/UKF_lib.c" title="UKF_lib.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/UKF_lib.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/UKF_lib.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="22021" selectionTopPixel="1037"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="UKF_lib.h" partName="UKF_lib.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/UKF_lib.h" title="UKF_lib.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/UKF_lib.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/UKF_lib.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="3578" selectionTopPixel="2360"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="heap_4.c" partName="heap_4.c" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/MemMang/heap_4.c" title="heap_4.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/MemMang/heap_4.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/heap_4.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11073" selectionTopPixel="4420"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOSConfig.h" partName="FreeRTOSConfig.h" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/FreeRTOSConfig.h" title="FreeRTOSConfig.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/FreeRTOSConfig.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/FreeRTOSConfig.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4881" selectionTopPixel="1264"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Buzzer.c" partName="Buzzer.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/Buzzer.c" title="Buzzer.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/Buzzer.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/Buzzer.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3968" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Buzzer.h" partName="Buzzer.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/Buzzer.h" title="Buzzer.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/Buzzer.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/Buzzer.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="113" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="LOGS.h" partName="LOGS.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/LOGS.h" title="LOGS.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/LOGS.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/LOGS.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4823" selectionTopPixel="3083"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="LOGS.c" partName="LOGS.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/LOGS.c" title="LOGS.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/LOGS.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/LOGS.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="46240" selectionTopPixel="2044"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="IMU_INS.c" partName="IMU_INS.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/IMU_INS.c" title="IMU_INS.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/IMU_INS.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/IMU_INS.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13679" selectionTopPixel="3638"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="PID.h" partName="PID.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PID.h" title="PID.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PID.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/PID.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2811" selectionTopPixel="782"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="PID.c" partName="PID.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PID.c" title="PID.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PID.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/PID.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="205" selectionTopPixel="220"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="semphr.h" partName="semphr.h" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/semphr.h" title="semphr.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/semphr.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/semphr.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="39271" selectionTopPixel="16201"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tasks.c" partName="tasks.c" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/source/tasks.c" title="tasks.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/source/tasks.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/tasks.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="57582" selectionTopPixel="10608"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="event_groups.c" partName="event_groups.c" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/source/event_groups.c" title="event_groups.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/source/event_groups.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/event_groups.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="16510" selectionTopPixel="7660"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="list.c" partName="list.c" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/source/list.c" title="list.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/source/list.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/list.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8451" selectionTopPixel="2106"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="spi_sd.c" partName="spi_sd.c" path="D:/Programming/STM32F407/11QUAD_UKF/fatfs/spi_sd.c" title="spi_sd.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/fatfs/spi_sd.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FATFS/spi_sd.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3148" selectionTopPixel="1598"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ccsbcs.c" partName="ccsbcs.c" path="D:/Programming/STM32F407/11QUAD_UKF/fatfs/ccsbcs.c" title="ccsbcs.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/fatfs/ccsbcs.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FATFS/ccsbcs.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1053" selectionOffset="16552" selectionTopPixel="5950"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ffconf.h" partName="ffconf.h" path="D:/Programming/STM32F407/11QUAD_UKF/fatfs/ffconf.h" title="ffconf.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/fatfs/ffconf.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FATFS/ffconf.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="574" selectionOffset="6105" selectionTopPixel="2746"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="diskio.h" partName="diskio.h" path="D:/Programming/STM32F407/11QUAD_UKF/fatfs/diskio.h" title="diskio.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/fatfs/diskio.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FATFS/diskio.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="2243" selectionTopPixel="840"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ff.h" partName="ff.h" path="D:/Programming/STM32F407/11QUAD_UKF/fatfs/ff.h" title="ff.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/fatfs/ff.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FATFS/ff.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="string.h" partName="string.h" title="string.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q1\arm-none-eabi\include\string.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q1\arm-none-eabi\include\string.h" project="QUAD_UKF_V_2"/>
+<editorState selectionHorizontalPixel="0" selectionLength="57" selectionOffset="554" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_adc.h" partName="stm32f4xx_adc.h" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/stm32f4xx_adc.h" title="stm32f4xx_adc.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/stm32f4xx_adc.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx_adc.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="32457" selectionTopPixel="9499"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_adc.c" partName="stm32f4xx_adc.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/source/stm32f4xx_adc.c" title="stm32f4xx_adc.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/source/stm32f4xx_adc.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx_adc.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="64687" selectionTopPixel="15453"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_tim.c" partName="stm32f4xx_tim.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/source/stm32f4xx_tim.c" title="stm32f4xx_tim.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/source/stm32f4xx_tim.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx_tim.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="88198" selectionTopPixel="18734"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="arm_std_f32.c" partName="arm_std_f32.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/StatisticsFunctions/arm_std_f32.c" title="arm_std_f32.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/StatisticsFunctions/arm_std_f32.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/DSP/arm_std_f32.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="561"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_spi.h" partName="stm32f4xx_spi.h" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/stm32f4xx_spi.h" title="stm32f4xx_spi.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/stm32f4xx_spi.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx_spi.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="16285" selectionTopPixel="6222"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" partName="port.c" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/ARM_CM4F/port.c" title="port.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/ARM_CM4F/port.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/port.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="30011" selectionTopPixel="4156"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" partName="stm32f4xx_gpio.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/source/stm32f4xx_gpio.c" title="stm32f4xx_gpio.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/source/stm32f4xx_gpio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx_gpio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16442" selectionTopPixel="3944"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_rcc.h" partName="stm32f4xx_rcc.h" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/stm32f4xx_rcc.h" title="stm32f4xx_rcc.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/stm32f4xx_rcc.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/stm32f4xx_rcc.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="21703" selectionTopPixel="7939"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" partName="system_stm32f4xx.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/system_stm32f4xx.c" title="system_stm32f4xx.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/system_stm32f4xx.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/system_stm32f4xx.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="30665" selectionTopPixel="10387"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="PWM_PPM.c" partName="PWM_PPM.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PWM_PPM.c" title="PWM_PPM.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/PWM_PPM.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/PWM_PPM.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9723" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOS.h" partName="FreeRTOS.h" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/FreeRTOS.h" title="FreeRTOS.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/FreeRTOS.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/FreeRTOS.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="38" selectionOffset="20501" selectionTopPixel="10914"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mpu_wrappers.h" partName="mpu_wrappers.h" path="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/mpu_wrappers.h" title="mpu_wrappers.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/FreeRTOS my files/include/mpu_wrappers.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FreeRTOS/mpu_wrappers.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="8425" selectionTopPixel="1570"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="core_cm4.h" partName="core_cm4.h" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/core_cm4.h" title="core_cm4.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/core_cm4.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/core_cm4.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4587" selectionTopPixel="1173"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" partName="startup_stm32f4xx.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/startup/startup_stm32f4xx.c" title="startup_stm32f4xx.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_boot/startup/startup_stm32f4xx.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/startup_stm32f4xx.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="20343" selectionTopPixel="6364"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" partName="math.h" title="math.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q1\arm-none-eabi\include\math.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q1\arm-none-eabi\include\math.h" project="QUAD_UKF_V_2"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="18883" selectionTopPixel="9027"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="arm_mat_mult_f32.c" partName="arm_mat_mult_f32.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/MatrixFunctions/arm_mat_mult_f32.c" title="arm_mat_mult_f32.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/MatrixFunctions/arm_mat_mult_f32.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/DSP/arm_mat_mult_f32.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="3377" selectionTopPixel="1020"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="arm_mat_trans_f32.c" partName="arm_mat_trans_f32.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/MatrixFunctions/arm_mat_trans_f32.c" title="arm_mat_trans_f32.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/MatrixFunctions/arm_mat_trans_f32.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/DSP/arm_mat_trans_f32.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="2791" selectionTopPixel="867"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="NAV_POINTS.c" partName="NAV_POINTS.c" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/NAV_POINTS.c" title="NAV_POINTS.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/NAV_POINTS.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/NAV_POINTS.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="326" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="NAV_POINTS.h" partName="NAV_POINTS.h" path="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/NAV_POINTS.h" title="NAV_POINTS.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/Quad_lib/NAV_POINTS.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/My/NAV_POINTS.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="308" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="arm_math.h" partName="arm_math.h" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/arm_math.h" title="arm_math.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/include/arm_math.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/Standart/arm_math.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="42934" selectionTopPixel="24276"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="arm_fill_f32.c" partName="arm_fill_f32.c" path="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/SupportFunctions/arm_fill_f32.c" title="arm_fill_f32.c" tooltip="D:/Programming/STM32F407/11QUAD_UKF/cmsis_lib/DSP_Lib/Source/SupportFunctions/arm_fill_f32.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/DSP/arm_fill_f32.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="2747" selectionTopPixel="952"/>
+</editor>
+<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">&#x0A;<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="5" verticalPosition="0"/>
+</input>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="spi_sd.h" partName="spi_sd.h" path="D:/Programming/STM32F407/11QUAD_UKF/fatfs/spi_sd.h" title="spi_sd.h" tooltip="D:/Programming/STM32F407/11QUAD_UKF/fatfs/spi_sd.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QUAD_UKF_V_2/FATFS/spi_sd.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1854" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions"/>
+<view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
+<expanded>
+<element path="/QUAD_UKF_V_2"/>
+<element path="/QUAD_UKF_V_2/FATFS"/>
+<element path="/QUAD_UKF_V_2/My"/>
+</expanded>
+<selection>
+<element path="/QUAD_UKF_V_2/My/IMU_INS.c"/>
+</selection>
+</viewState>
+</view>
+<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting"/>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.coocox.coassistant.view.CoAssistantView_debug" partName="Peripherals">
+<viewState horizontalPosition="0" verticalPosition="46">
+<selection>
+<element name="TIM5"/>
+</selection>
+<registerValues baseAddress="Base Address: 0x40000C00" description="Description:  General-purpose-timers"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view" partName="Disassembly">
+<viewState disassembly.syncActiveContext="true" disassembly.trackExpression="false"/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.coocox.userspace.actionSet"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.ShowDisassemblyAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showExpressionsAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showDebugAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showConsoleAction"/>
+<hide_menu_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryBrowserAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showVariablesAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.openProjectExplorerAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.trace.actions.ShowTraceControlAction"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showRegistersAction"/>
+<hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@28ae9b" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.17640808"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@13dc071">
+<folder appearance="2" expanded="2">
+<page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@28ae9b" ratio="0.7369589" ratioLeft="664" ratioRight="237" relationship="4" relative="org.eclipse.ui.internal.ViewStack@13dc071">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@13dc071">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@114d647" ratio="0.6992561" ratioLeft="658" ratioRight="283" relationship="4" relative="org.eclipse.ui.internal.ViewStack@13dc071">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.21966527" ratioLeft="420" ratioRight="1492" relationship="2" relative="org.eclipse.ui.internal.ViewStack@13dc071"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@15b903f" ratio="0.71983916" ratioLeft="1074" ratioRight="418" relationship="2" relative="org.coocox.builder.ui.exampleView">
+<folder appearance="2" expanded="2">
+<page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
+<page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.44952178" ratioLeft="423" ratioRight="518" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@9f1f0a" ratio="0.5" ratioLeft="746" ratioRight="746" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1253b59" ratio="0.36981934" ratioLeft="348" ratioRight="593" relationship="4" relative="org.eclipse.ui.internal.ViewStack@13dc071">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.coocox.codebugger.configuration.ui.Perspective" id="org.coocox.codebugger.configuration.perspective" label="CoDebugger"/>
+<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFolder"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_menu_item_id id="org.eclipse.ui.file.save"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAll"/>
+<hide_menu_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_menu_item_id id="org.coocox.builder.ui.openFile"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAs"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.projectMenu"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.flashMenu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.debug"/>
+<hide_menu_item_id id="org.coocox.builder.ui.showHelpViewAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_menu_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.build"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_menu_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.TargetManageAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newProject"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_toolbar_item_id id="org.eclipse.ui.file.save"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideFlashEraseAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.debug"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.coocox.coassistant.view.CoAssistantView_debug"/>
+<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@b55a70" orientation="256" selectedTabId="org.eclipse.debug.ui.MemoryView" style="0">
+<fastViews>
+<view id="org.coocox.codebugger.trace.ui.traceview" ratio="0.3"/>
+<view id="org.eclipse.debug.ui.ExpressionView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@1209e37" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2986185"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@19dd4a9">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1209e37" ratio="0.71009773" ratioLeft="654" ratioRight="267" relationship="4" relative="org.eclipse.ui.internal.ViewStack@19dd4a9">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.internal.ViewStack@19dd4a9">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@a270a9" ratio="0.69163954" ratioLeft="637" ratioRight="284" relationship="4" relative="org.eclipse.ui.internal.ViewStack@19dd4a9">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@b55a70" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.ui.internal.ViewStack@a270a9">
+<folder appearance="2" expanded="0">
+<page content="org.coocox.codebugger.trace.ui.traceview" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
+<page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@449147" ratio="0.71253985" ratioLeft="1341" ratioRight="541" relationship="2" relative="org.eclipse.ui.internal.ViewStack@19dd4a9">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="Peripherals"/>
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="Disassembly"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2574813" ratioLeft="413" ratioRight="1191" relationship="2" relative="org.eclipse.ui.internal.ViewStack@19dd4a9"/>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/I2C_BARO_MAG.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/I2C_BARO_MAG.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/PWM_PPM.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/Standart/startup_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/Standart/stm32f4xx_i2c.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/USART_TELEMETRY.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/PWM_PPM.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/Config.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/MPU6500.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/MPU6500.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/QUAD_UKF_V_2/My/IMU_INS.c"/>
+</editors>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="8689" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="8849" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_i2c.c" index="5">
+<position info="not_deleted" x="43596" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="20662" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.h" index="1">
+<position info="not_deleted" x="172" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="20662" y="0"/>
+</item>
+<item historyLabel="startup_stm32f4xx.c" index="4">
+<position info="not_deleted" x="14969" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="8235" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="8689" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="8849" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26219" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26242" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="19646" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26274" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="21230" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="21295" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="21379" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="21497" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="21613" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="21762" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26329" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="25907" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26329" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26384" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26439" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26497" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26538" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26565" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26588" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26565" y="0"/>
+</item>
+<item historyLabel="I2C_BARO_MAG.c" index="0">
+<position info="not_deleted" x="26588" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="8919" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="9132" y="0"/>
+</item>
+<item historyLabel="startup_stm32f4xx.c" index="4">
+<position info="not_deleted" x="20343" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="9132" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="9486" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position/>
+</item>
+<item historyLabel="USART_TELEMETRY.h" index="6">
+<position info="not_deleted" x="1012" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="8932" y="0"/>
+</item>
+<item historyLabel="PWM_PPM.c" index="2">
+<position info="not_deleted" x="1004" y="18"/>
+</item>
+<item historyLabel="PWM_PPM.h" index="7">
+<position info="not_deleted" x="1567" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="9069" y="0"/>
+</item>
+<item historyLabel="Config.h" index="8">
+<position info="not_deleted" x="905" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="9194" y="0"/>
+</item>
+<item historyLabel="MPU6500.h" index="9">
+<position info="not_deleted" x="95" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="9203" y="0"/>
+</item>
+<item historyLabel="MPU6500.c" index="10">
+<position info="not_deleted" x="4603" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="9203" y="0"/>
+</item>
+<item historyLabel="IMU_INS.c" index="11">
+<position info="not_deleted" x="13679" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="3">
+<position info="not_deleted" x="4842" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="spi_sd.h" tooltip="QUAD_UKF_V_2/FATFS/spi_sd.h">
+<persistable path="/QUAD_UKF_V_2/FATFS/spi_sd.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="QUAD_LOGS/Standart/startup_stm32f4xx.c">
+<persistable path="/QUAD_LOGS/Standart/startup_stm32f4xx.c"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PWM_PPM.h" tooltip="D:\Programming\STM32F407\1QUAD_FOR_LOGS\Quad_lib\PWM_PPM.h">
+<persistable path="D:\Programming\STM32F407\1QUAD_FOR_LOGS\Quad_lib\PWM_PPM.h" project="QUAD_LOGS"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="spi_sd.h" tooltip="QUAD_LOGS/FATFS/spi_sd.h">
+<persistable path="/QUAD_LOGS/FATFS/spi_sd.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="spi_sd.c" tooltip="QUAD_LOGS/FATFS/spi_sd.c">
+<persistable path="/QUAD_LOGS/FATFS/spi_sd.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LOGS2.h" tooltip="QUAD_LOGS/My/LOGS2.h">
+<persistable path="/QUAD_LOGS/My/LOGS2.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="LOGS2.c" tooltip="QUAD_LOGS/My/LOGS2.c">
+<persistable path="/QUAD_LOGS/My/LOGS2.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Buzzer.h" tooltip="QUAD_LOGS/My/Buzzer.h">
+<persistable path="/QUAD_LOGS/My/Buzzer.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Buzzer.c" tooltip="QUAD_LOGS/My/Buzzer.c">
+<persistable path="/QUAD_LOGS/My/Buzzer.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PWM_PPM.h" tooltip="QUAD_LOGS/My/PWM_PPM.h">
+<persistable path="/QUAD_LOGS/My/PWM_PPM.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2C_BARO_MAG.h" tooltip="QUAD_LOGS/My/I2C_BARO_MAG.h">
+<persistable path="/QUAD_LOGS/My/I2C_BARO_MAG.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="GPS.h" tooltip="QUAD_LOGS/My/GPS.h">
+<persistable path="/QUAD_LOGS/My/GPS.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Config.h" tooltip="QUAD_LOGS/My/Config.h">
+<persistable path="/QUAD_LOGS/My/Config.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ADC.h" tooltip="QUAD_LOGS/My/ADC.h">
+<persistable path="/QUAD_LOGS/My/ADC.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PWM_PPM.c" tooltip="QUAD_LOGS/My/PWM_PPM.c">
+<persistable path="/QUAD_LOGS/My/PWM_PPM.c"/>
+</file>
+</mruList>
+</workbench>

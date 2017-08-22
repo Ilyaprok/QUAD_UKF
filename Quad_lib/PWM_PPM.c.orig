@@ -1,0 +1,349 @@
+
+
+
+#include "stm32f4xx.h"
+#include "stm32f4xx_conf.h"
+
+#include "Config.h"
+
+#include "PWM_PPM.h"
+#include "GPS.h"
+#include "MPU6500.h"
+#include "IMU_INS.h"
+#include "I2C_BARO_MAG.h"
+
+//Вспомогательыне промежуточные данные
+#define PPM_NCNT 16		 /* макс количество пропусков ППМ */
+uint8_t	ppm1_nimp[10];		/* значения счетчиков пропусков ППМ */
+uint16_t ppm1_buf[9]; 		/* буфер для значений каналов ППМ */
+uint16_t RSSI;
+//****************************************************//
+//Главные данные с приемника
+volatile float throtle_ppm, yaw_rate_ppm, pitch_ppm, roll_ppm;
+uint16_t option_channel_1, option_channel_2;
+uint16_t M1_lev_front, M2_prav_back, M3_prav_front, M4_lev_back;
+//****************************************************//
+//Счетчики циклов
+uint32_t cnt_cycle_ppm, cnt_ticks_ppm;
+uint32_t cnt_cycle_pwm, cnt_ticks_pwm;
+
+
+void Init_PWM_Reciever1(uint16_t Presc)
+{
+	GPIO_InitTypeDef  GPIO_InitStructure;
+	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+	TIM_ICInitTypeDef TIM_ICInitStruct;
+
+	/* умолчательное заполнение осн. структуры ШИМ */
+	TIM_TimeBaseStructInit(&TIM_TimeBaseInitStruct);
+
+	/* настройка первого набора ШИМ */
+
+	/* включим такт на на входы PPM1 */
+	//RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOE, ENABLE);
+	PPM_R_RCC_PERIPH_PIN();
+
+	/* настройка порта ввода ППМ  */
+	GPIO_InitStructure.GPIO_Pin   = PPM_R_MULTI_Pin;
+	GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_AF;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
+	GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP ;
+	GPIO_Init(PPM_R_Port_Group, &GPIO_InitStructure);
+	/* Connect TIM pin to AF1 */
+	GPIO_PinAFConfig(PPM_R_Port_Group, PPM_R_Pin_Source1, PPM_R_GPIO_AF);
+	GPIO_PinAFConfig(PPM_R_Port_Group, PPM_R_Pin_Source2, PPM_R_GPIO_AF);
+
+	/* подадим такт на счётчик ППМ */
+	//RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
+	PPM_R_RCC_PERIPH();
+	/* основные настройки счётчика и предделителя */
+	TIM_TimeBaseInitStruct.TIM_Prescaler = Presc;//167
+	TIM_TimeBaseInitStruct.TIM_Period = 0xffff;  /* полный круг */
+	TIM_TimeBaseInit(PPM_R, &TIM_TimeBaseInitStruct);
+	/* Конфигурируем каналы:  ППМ
+	- режим: захват перепада */
+	TIM_ICInitStruct.TIM_ICPolarity = TIM_ICPolarity_Rising;
+	TIM_ICInitStruct.TIM_ICSelection = TIM_ICSelection_DirectTI;
+	TIM_ICInitStruct.TIM_ICPrescaler = 0x00;
+	TIM_ICInitStruct.TIM_ICFilter = 0x04;
+	/* 1 канал ППМ */
+	TIM_ICInitStruct.TIM_Channel = TIM_Channel_1;
+	TIM_ICInit(PPM_R,&TIM_ICInitStruct);
+	/* 2 канал ППМ */
+	TIM_ICInitStruct.TIM_Channel = TIM_Channel_2;
+	TIM_ICInit(PPM_R,&TIM_ICInitStruct);
+
+	/* разрешаем прерывания от счётчика ППМ1 */
+	TIM_ITConfig(PPM_R,(TIM_IT_CC1|TIM_IT_CC2|TIM_IT_Update),ENABLE);
+
+	NVIC_SetPriority(PPM_R_IRQ, PRIORITET_PPM);
+	NVIC_EnableIRQ(PPM_R_IRQ);
+	/* включаем счётчик */
+	TIM_Cmd(PPM_R, ENABLE);
+}
+void Init_PWM_Motor(uint16_t Period1, uint16_t Dp1)
+{
+	M1_lev_front = 28550;
+	M2_prav_back = 28550;
+	M3_prav_front = 28550;
+	M4_lev_back = 28550;
+	GPIO_InitTypeDef  GPIO_InitStructure;
+	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+	TIM_OCInitTypeDef TIM_OCInitStruct;
+	/* настройка первого набора ШИМ */
+	//RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+	PWM_M_RCC_PERIPH_PIN1();
+	GPIO_InitStructure.GPIO_Pin = PWM_M_MULTI_Pin1;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(PWM_M_Port_Group1, &GPIO_InitStructure);
+
+	//RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+	PWM_M_RCC_PERIPH_PIN2();
+	GPIO_InitStructure.GPIO_Pin = PWM_M_MULTI_Pin2;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(PWM_M_Port_Group2, &GPIO_InitStructure);
+	/* Соединим выходы TIM_PWM1 с AF1 */
+	//GPIO_PinAFConfig(GPIOA, GPIO_PinSource6, GPIO_AF_TIM3);
+	GPIO_PinAFConfig(PWM_M_Port_Group2, PWM_M_Pin_Source1, PWM_M_GPIO_AF);
+	GPIO_PinAFConfig(PWM_M_Port_Group1, PWM_M_Pin_Source2, PWM_M_GPIO_AF);
+	GPIO_PinAFConfig(PWM_M_Port_Group1, PWM_M_Pin_Source3, PWM_M_GPIO_AF);
+	GPIO_PinAFConfig(PWM_M_Port_Group1, PWM_M_Pin_Source4, PWM_M_GPIO_AF);
+
+	/* подадим такт на счётчики ШИМ */
+	//RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
+	PWM_M_RCC_PERIPH();
+	/* основные настройки счётчика и предделителя */
+	TIM_TimeBaseInitStruct.TIM_Period = Period1;
+	TIM_TimeBaseInitStruct.TIM_Prescaler = 2;
+	TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+	TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
+	TIM_TimeBaseInitStruct.TIM_RepetitionCounter = 0x0000;
+	TIM_TimeBaseInit(PWM_M, &TIM_TimeBaseInitStruct);
+	/* Конфигурируем каналы:  ШИМ
+	- режим: ШИМ до края счёта */
+	TIM_OCStructInit(&TIM_OCInitStruct);
+	TIM_OCInitStruct.TIM_Pulse = Dp1;
+	TIM_OCInitStruct.TIM_OCMode = TIM_OCMode_PWM1;
+	TIM_OCInitStruct.TIM_OutputState = TIM_OutputState_Enable;
+	TIM_OCInitStruct.TIM_OutputNState = TIM_OutputNState_Disable;
+	TIM_OC1Init(PWM_M, &TIM_OCInitStruct);
+	TIM_OC2Init(PWM_M, &TIM_OCInitStruct);
+	TIM_OC3Init(PWM_M, &TIM_OCInitStruct);
+	TIM_OC4Init(PWM_M, &TIM_OCInitStruct);
+	/* включение ШИМ для TIM1,TIM8 */
+	TIM_CtrlPWMOutputs(PWM_M,ENABLE);
+
+	/* включаем счётчик */
+	TIM_Cmd(PWM_M, ENABLE);
+
+	/* разрешаем прерывания от счётчика ШИМ 1 */
+	TIM_ITConfig(PWM_M, TIM_IT_Update, ENABLE);
+
+	NVIC_SetPriority(PWM_M_IRQ,PRIORITET_PWM );
+	NVIC_EnableIRQ(PWM_M_IRQ);
+}
+
+void TIM1_CC_IRQHandler(void)
+{
+   /* PPM IN 1-8 */
+	static uint16_t ccr_buf[9], cnt_chanel; /* буфер для временного хранения начала импульса */
+	static portBASE_TYPE xHigherPriorityTaskWoken_PPM = pdFALSE;
+	static uint16_t rssi;
+	static uint8_t start_impulse=0;
+
+	uint16_t port =	PPM_R->CCER;
+	uint16_t ccr;
+
+	if (TIM_GetFlagStatus(PPM_R,TIM_FLAG_CC1) == SET) /* 1 канал */
+	{
+	    ccr = TIM_GetCapture1(PPM_R);
+	    if((port & TIM_CCER_CC1P) == 0)
+		{
+		    ccr_buf[cnt_chanel] = ccr;
+		    TIM_OC1PolarityConfig(PPM_R,TIM_ICPolarity_Falling);
+		}
+	    else
+		{
+		    TIM_OC1PolarityConfig(PPM_R,TIM_ICPolarity_Rising);
+		    if (TIM_GetFlagStatus(PPM_R,TIM_FLAG_CC1OF) == RESET)
+			{
+			    if ((ccr - ccr_buf[cnt_chanel])>10000)
+				{
+				    if (start_impulse < 2) start_impulse++;
+				    cnt_chanel = 0;
+				}
+
+			    ppm1_buf[cnt_chanel] = ccr - ccr_buf[cnt_chanel]+394;
+
+			    if (start_impulse == 2)
+				{
+				    switch(cnt_chanel)
+					{
+					    case 1:
+					    yaw_rate_ppm = (float)YAW_RATE*(ppm1_buf[1] - MED_PPM);
+					    break;
+					    case 2:
+					    pitch_ppm = (float)PITCH_ROLL_K*(ppm1_buf[2] - MED_PPM);
+					    break;
+					    case 3:
+					    if (ppm1_buf[3] < MIN_PPM) ppm1_buf[3] = MIN_PPM;
+					    throtle_ppm = (float)THROTLE_K*(ppm1_buf[3] - MIN_PPM);
+					    break;
+					    case 4:
+					    roll_ppm = (float)PITCH_ROLL_K*(ppm1_buf[4] - MED_PPM);
+					    break;
+					    case 5:
+					    option_channel_1 = ppm1_buf[5];
+					    if((option_channel_1 > 1530)&&(option_channel_1 < 1550))
+						    {
+							Mode = MODE_ESC_CALIB;
+						       // mode_of_sqrt_cont = 0;
+						    }
+					    if((option_channel_1 > 1129)&&(option_channel_1 < 1149))
+						    {
+							Mode = MODE_STAB;
+							//mode_of_sqrt_cont = 0;
+						    }
+					    if((option_channel_1 > 1261)&&(option_channel_1 < 1281))
+						    {
+//							if (supervisorState&GPS_GLITCH) Mode = MODE_STAB;
+//							else
+							Mode = MODE_ALT_HOLD;
+							//mode_of_sqrt_cont = 0;
+						    }
+					    if((option_channel_1 > 1405)&&(option_channel_1 < 1425))
+						    {
+							if ((supervisorState&GPS_GLITCH)||(GPS_hAccf>2.5f)) Mode = MODE_ALT_HOLD;
+							else
+							Mode = MODE_POS_HOLD;
+						       // mode_of_sqrt_cont = 1;
+						    }
+					    break;
+					    case 6:
+					    option_channel_2 = ppm1_buf[6];
+					    break;
+					    default: break;
+					}
+				}
+
+			   cnt_chanel++;
+			   if (cnt_chanel == 9)
+			       {
+				   cnt_chanel=0;
+				   cnt_cycle_ppm = (uint32_t)DWT->CYCCNT - cnt_ticks_ppm;
+				   cnt_ticks_ppm = (uint32_t)DWT->CYCCNT;
+				   xSemaphoreGiveFromISR(xSD_PPM_collect_Semaphore, &xHigherPriorityTaskWoken_PPM);
+			       }
+
+			}
+		    else TIM_ClearFlag(PPM_R,TIM_FLAG_CC1OF);
+		}
+	    		ppm1_nimp[cnt_chanel] = 0;
+	    		TIM_ClearITPendingBit(PPM_R, TIM_IT_CC1);
+
+	}
+	if (TIM_GetFlagStatus(PPM_R,TIM_FLAG_CC2) == SET) /* 2 канал */
+	{
+		ccr = TIM_GetCapture2(PPM_R);
+		if ((port & TIM_CCER_CC2P) == 0) {
+			rssi = ccr;
+			TIM_OC2PolarityConfig(PPM_R,TIM_ICPolarity_Falling);
+		} else {
+			TIM_OC2PolarityConfig(PPM_R,TIM_ICPolarity_Rising);
+			if (TIM_GetFlagStatus(PPM_R,TIM_FLAG_CC2OF) == RESET)
+			    {
+				RSSI = ccr - rssi;
+			    }
+
+			else TIM_ClearFlag(PPM_R,TIM_FLAG_CC2OF);
+		}
+		ppm1_nimp[9] = 0;
+		TIM_ClearITPendingBit(PPM_R, TIM_IT_CC2);
+	}
+	if (TIM_GetFlagStatus(PPM_R,TIM_FLAG_Update) == SET)
+	{
+		if (ppm1_nimp[0]< PPM_NCNT) ppm1_nimp[0]++;
+		if (ppm1_nimp[1]< PPM_NCNT) ppm1_nimp[1]++;
+		if (ppm1_nimp[2]< PPM_NCNT) ppm1_nimp[2]++;
+		if (ppm1_nimp[3]< PPM_NCNT) ppm1_nimp[3]++;
+		if (ppm1_nimp[4]< PPM_NCNT) ppm1_nimp[4]++;
+		if (ppm1_nimp[5]< PPM_NCNT) ppm1_nimp[5]++;
+		if (ppm1_nimp[6]< PPM_NCNT) ppm1_nimp[6]++;
+		if (ppm1_nimp[7]< PPM_NCNT) ppm1_nimp[7]++;
+		if (ppm1_nimp[8]< PPM_NCNT) ppm1_nimp[8]++;
+		if (ppm1_nimp[9]< PPM_NCNT) ppm1_nimp[9]++;
+		TIM_ClearITPendingBit(PPM_R, TIM_IT_Update);
+
+	}
+}
+void TIM3_IRQHandler(void)
+{
+	static portBASE_TYPE xHigherPriorityTaskWoken_PWM = pdFALSE;
+	cnt_cycle_pwm = (uint32_t)DWT->CYCCNT - cnt_ticks_pwm;
+	cnt_ticks_pwm = (uint32_t)DWT->CYCCNT;
+	TIM_SetCompare1(PWM_M, M1_lev_front);
+	TIM_SetCompare2(PWM_M, M2_prav_back);
+	TIM_SetCompare3(PWM_M, M3_prav_front);
+	TIM_SetCompare4(PWM_M, M4_lev_back);
+//	TIM3->ARR = period_tim;
+//	TIM3->PSC = prescaler_tim;
+	TIM_ClearITPendingBit(PWM_M, TIM_IT_Update);
+
+	xSemaphoreGiveFromISR(xSD_PWM_collect_Semaphore, &xHigherPriorityTaskWoken_PWM);
+}
+void prvArming(void *pvParameters)
+    {
+	static uint16_t schet_arming, schet_disarming;
+	uint16_t yaw_raw_ppm;
+	float thr_ppm;
+	while(1)
+	    {
+		//защититить
+		taskENTER_CRITICAL();
+		thr_ppm = throtle_ppm;
+		yaw_raw_ppm = ppm1_buf[1];
+		taskEXIT_CRITICAL();
+		////////////
+
+		if((supervisorState&STATE_ARMED)&&(thr_ppm>0.3f)) supervisorState|=STATE_FLYING;
+		else supervisorState &= ~STATE_FLYING;
+
+		if (((thr_ppm < 0.05f)&&(yaw_raw_ppm > 1950))&&!(supervisorState&STATE_ARMED))	schet_arming++;
+		else schet_arming = 0;
+		if (((thr_ppm < 0.05f)&&(yaw_raw_ppm < 1050))&&(supervisorState&STATE_ARMED))	schet_disarming++;
+		else schet_disarming = 0;
+		if ((schet_arming >= TIME_FOR_ARMING)&&!(supervisorState&STATE_ARMED))
+		    {
+			//защитить
+			taskENTER_CRITICAL();
+			supervisorState |= STATE_ARMED;
+			flag_start_home = 0;
+			flag_start_home_baro = 0;
+			buzzer_flag = BUZZER_FLAG_ARMING_DISARMING;
+			//flag_start_arming_imu = 1;
+			xSemaphoreGive(xSD_FLAGS_collect_Semaphore);
+			//////////
+			schet_arming = 0;
+			taskEXIT_CRITICAL();
+		    }
+		if ((schet_disarming >= TIME_FOR_ARMING)&&(supervisorState&STATE_ARMED))
+		    {
+			//защитить
+			taskENTER_CRITICAL();
+			supervisorState &= ~STATE_ARMED;
+			buzzer_flag = BUZZER_FLAG_ARMING_DISARMING;
+			xSemaphoreGive(xSD_FLAGS_collect_Semaphore);
+			///////////
+			schet_disarming = 0;
+			taskEXIT_CRITICAL();
+		    }
+		vTaskDelay(50);
+	    }
+    }

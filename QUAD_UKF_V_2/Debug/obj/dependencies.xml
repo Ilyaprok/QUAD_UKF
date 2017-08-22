@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/ID:\Programming\STM32F407 /ID:\Programming\STM32F407\11QUAD_UKF /ID:\Programming\STM32F407\11QUAD_UKF\cmsis_lib\include /ID:\Programming\STM32F407\11QUAD_UKF\FreeRTOS my files /ID:\Programming\STM32F407\11QUAD_UKF\cmsis_lib /ID:\Programming\STM32F407\11QUAD_UKF\cmsis_boot /ID:\Programming\STM32F407\11QUAD_UKF\FreeRTOS my files\ARM_CM4F /ID:\Programming\STM32F407\11QUAD_UKF\fatfs /ID:\Programming\STM32F407\11QUAD_UKF\Quad_lib /ID:\Programming\STM32F407\11QUAD_UKF\FreeRTOS my files\include">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_negate_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\fatfs\ff.h" lastModified="155ac04b69d">
+         <include file="..\..\..\fatfs\integer.h"/>
+         <include file="..\..\..\fatfs\ffconf.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\USART_TELEMETRY.h" lastModified="15e09d5181d">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+      </source>
+      <source file="..\..\..\fatfs\ff.c" lastModified="155ac04ba82">
+         <include file="..\..\..\fatfs\ff.h"/>
+         <include file="..\..\..\fatfs\diskio.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\USART_TELEMETRY.c" lastModified="15e09bbe220">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\Quad_lib\USART_TELEMETRY.h"/>
+         <include file="..\..\..\Quad_lib\I2C_BARO_MAG.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\GPS.h"/>
+         <include file="..\..\..\Quad_lib\ADC.h"/>
+         <include file="..\..\..\Quad_lib\PWM_PPM.h"/>
+         <include file="..\..\..\Quad_lib\UKF_lib.h"/>
+         <include file="..\..\..\Quad_lib\PID.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_fsmc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_mult_f32.c" lastModified="1501e636d60">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_cryp_tdes.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_cryp.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\Buzzer.h" lastModified="15737bf4b10">
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\SupportFunctions\arm_fill_f32.c" lastModified="1501e637530">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_mult_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\Buzzer.c" lastModified="15e09bbe286">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\Quad_lib\Buzzer.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\task.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\list.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\GPS.h" lastModified="15e09bbe235">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\GPS.c" lastModified="15e09bbe245">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\Quad_lib\GPS.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\I2C_BARO_MAG.h"/>
+         <include file="..\..\..\Quad_lib\USART_TELEMETRY.h"/>
+         <include file="..\..\..\Quad_lib\PWM_PPM.h"/>
+         <include file="..\..\..\Quad_lib\UKF_lib.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\projdefs.h" lastModified="155ac04b6b0">
+      </source>
+      <source file="..\..\..\FreeRTOS my files\source\event_groups.c" lastModified="155ac04ba98">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\timers.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\event_groups.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dcmi.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_cryp_aes.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_cryp.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\semphr.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\queue.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\timers.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\list.h" lastModified="155ac04b6b0">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\StatisticsFunctions\arm_mean_f32.c" lastModified="1501e635dc0">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\plugs.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\plugs.c" lastModified="1575d07af4f">
+         <include file="..\..\..\FreeRTOS my files\plugs.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\Quad_lib\ADC.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\Buzzer.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\projdefs.h"/>
+         <include file="..\..\..\FreeRTOS my files\FreeRTOSConfig.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\StatisticsFunctions\arm_max_f32.c" lastModified="1501e635dc0">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\MPU6500.h" lastModified="15e09bbe20b">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\MPU6500.c" lastModified="15e09d9eb43">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\Quad_lib\UKF_lib.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash_ramfunc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_flash_ramfunc.h"/>
+      </source>
+      <source file="..\..\..\fatfs\integer.h" lastModified="155ac04be6f">
+      </source>
+      <source file="..\..\..\FreeRTOS my files\source\queue.c" lastModified="155ac04be80">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\queue.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dbgmcu.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\StatisticsFunctions\arm_var_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_cmplx_mult_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\FreeRTOSConfig.h" lastModified="159d11473b1">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_cryp_des.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_cryp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\MemMang\heap_4.c" lastModified="155ac04ba98">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_wwdg.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_wwdg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\portable.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\deprecated_definitions.h"/>
+         <include file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\ADC.h" lastModified="15e09bbe264">
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_offset_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\StatisticsFunctions\arm_std_f32.c" lastModified="1501e635dc0">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\ADC.c" lastModified="15e09bbe25a">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\Quad_lib\ADC.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\StackMacros.h" lastModified="155ac04b6b0">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_ltdc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_ltdc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_can.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_add_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_sub_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\deprecated_definitions.h" lastModified="155ac0581d0">
+         <include file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_hash.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_hash.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cm4.h" lastModified="155ac04ba98">
+         <include file="..\..\..\cmsis_lib\include\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cmSimd.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\queue.h" lastModified="155ac04b6b0">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_flash.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_sai.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\source\timers.c" lastModified="155ac04ba98">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\queue.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\timers.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\croutine.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\list.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cm0.h" lastModified="155ac04ba98">
+         <include file="..\..\..\cmsis_lib\include\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\NAV_POINTS.h" lastModified="15af810b059">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_pwr.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\ARM_CM4F\port.c" lastModified="159a34f2dd1">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\NAV_POINTS.c" lastModified="15b2ecdce36">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\UKF_lib.h"/>
+         <include file="..\..\..\Quad_lib\NAV_POINTS.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\StatisticsFunctions\arm_power_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cm0plus.h" lastModified="155ac04ba98">
+         <include file="..\..\..\cmsis_lib\include\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_scale_f32.c" lastModified="1501e636d60">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_init_f32.c" lastModified="1501e635dc0">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_can.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_can.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_wwdg.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_hash_md5.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_hash.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_sai.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_sai.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rng.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_flash_ramfunc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_ltdc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\Config.h" lastModified="15b58a98bf5">
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\PWM_PPM.h" lastModified="15e09d695d2">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_cryp.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_cryp.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\PWM_PPM.c" lastModified="15e09bbe275">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\Quad_lib\PWM_PPM.h"/>
+         <include file="..\..\..\Quad_lib\GPS.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\I2C_BARO_MAG.h"/>
+         <include file="..\..\..\Quad_lib\NAV_POINTS.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_pwr.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\UKF_lib.h" lastModified="15def3a7cda">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\IMU_INS.h" lastModified="15ad68251d6">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_hash.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\source\list.c" lastModified="155ac04ba98">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\list.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\FreeRTOS.h" lastModified="159d0b98dc9">
+         <include file="..\..\..\FreeRTOS my files\FreeRTOSConfig.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\projdefs.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\portable.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\UKF_lib.c" lastModified="15e0603e1cb">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\Quad_lib\I2C_BARO_MAG.h"/>
+         <include file="..\..\..\Quad_lib\GPS.h"/>
+         <include file="..\..\..\Quad_lib\UKF_lib.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\IMU_INS.c" lastModified="15e0603e1e6">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\Quad_lib\I2C_BARO_MAG.h"/>
+         <include file="..\..\..\Quad_lib\USART_TELEMETRY.h"/>
+         <include file="..\..\..\Quad_lib\ADC.h"/>
+         <include file="..\..\..\Quad_lib\GPS.h"/>
+         <include file="..\..\..\Quad_lib\PWM_PPM.h"/>
+         <include file="..\..\..\Quad_lib\UKF_lib.h"/>
+         <include file="..\..\..\Quad_lib\PID.h"/>
+         <include file="..\..\..\Quad_lib\NAV_POINTS.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\source\croutine.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma2d.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma2d.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\StatisticsFunctions\arm_rms_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1575cac41bb">
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\SupportFunctions\arm_copy_f32.c" lastModified="1501e637530">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rng.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rng.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cmInstr.h" lastModified="155ac04c268">
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_inverse_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_crc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_sdio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\PID.h" lastModified="15af7827418">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="14c29296cf8">
+         <include file="..\..\..\cmsis_lib\include\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\PID.c" lastModified="15760e5c4f1">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\Quad_lib\PID.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\PWM_PPM.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\mpu_wrappers.h" lastModified="155ac04b6b0">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dac.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_cryp.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_iwdg.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_iwdg.h"/>
+      </source>
+      <source file="..\..\..\fatfs\spi_sd.h" lastModified="15e09bbe2c1">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\fatfs\diskio.h"/>
+         <include file="..\..\..\fatfs\ff.h"/>
+         <include file="..\..\..\fatfs\ffconf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_flash.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\fatfs\spi_sd.c" lastModified="15e09bbe2b2">
+         <include file="..\..\..\fatfs\spi_sd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_hash_sha1.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_hash.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_trans_f32.c" lastModified="1501e635dc0">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1572ca701c8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\FreeRTOS my files\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS my files\FreeRTOSConfig.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\croutine.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\queue.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\semphr.h"/>
+         <include file="..\..\..\FreeRTOS my files\plugs.h"/>
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\LOGS.h" lastModified="1575cb64583">
+         <include file="..\..\..\Quad_lib\UKF_lib.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_crc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_crc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\LOGS.c" lastModified="15e09bbe299">
+         <include file="..\..\..\Quad_lib\Config.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\fatfs\ff.h"/>
+         <include file="..\..\..\fatfs\spi_sd.h"/>
+         <include file="..\..\..\Quad_lib\LOGS.h"/>
+         <include file="..\..\..\Quad_lib\MPU6500.h"/>
+         <include file="..\..\..\Quad_lib\IMU_INS.h"/>
+         <include file="..\..\..\Quad_lib\I2C_BARO_MAG.h"/>
+         <include file="..\..\..\Quad_lib\GPS.h"/>
+         <include file="..\..\..\Quad_lib\ADC.h"/>
+         <include file="..\..\..\Quad_lib\PWM_PPM.h"/>
+         <include file="..\..\..\Quad_lib\PID.h"/>
+      </source>
+      <source file="..\..\..\fatfs\diskio.h" lastModified="155ac04b696">
+         <include file="..\..\..\fatfs\integer.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_dot_prod_f32.c" lastModified="1501e636d60">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dac.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\source\tasks.c" lastModified="159d0b9957c">
+         <include file="..\..\..\FreeRTOS my files\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\task.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\timers.h"/>
+         <include file="..\..\..\FreeRTOS my files\include\StackMacros.h"/>
+      </source>
+      <source file="..\..\..\fatfs\ccsbcs.c" lastModified="155ac04b696">
+         <include file="..\..\..\fatfs\ff.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="14b822b5970">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_sdio.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="153801e49f0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_add_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_sub_f32.c" lastModified="1501e636d60">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rtc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_iwdg.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cm7.h" lastModified="155ac04ba98">
+         <include file="..\..\..\cmsis_lib\include\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cmSimd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\StatisticsFunctions\arm_min_f32.c" lastModified="1501e636590">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\MatrixFunctions\arm_mat_scale_f32.c" lastModified="1501e635dc0">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\fatfs\ffconf.h" lastModified="155ac04b69e">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma2d.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cm3.h" lastModified="155ac04ba98">
+         <include file="..\..\..\cmsis_lib\include\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cmFunc.h" lastModified="155ac04c268">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\I2C_BARO_MAG.h" lastModified="15e09bbe1fd">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Quad_lib\I2C_BARO_MAG.c" lastModified="15e09bbe5c7">
+         <include file="..\..\..\Quad_lib\I2C_BARO_MAG.h"/>
+         <include file="..\..\..\Quad_lib\PWM_PPM.h"/>
+         <include file="..\..\..\Quad_lib\Config.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\core_cmSimd.h" lastModified="155ac04c268">
+      </source>
+      <source file="..\..\..\cmsis_lib\DSP_Lib\Source\BasicMathFunctions\arm_abs_f32.c" lastModified="1501e636978">
+         <include file="..\..\..\cmsis_lib\include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\arm_math.h" lastModified="155ac04be80">
+         <include file="..\..\..\cmsis_lib\include\core_cm7.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cm4.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cm3.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cm0.h"/>
+         <include file="..\..\..\cmsis_lib\include\core_cm0plus.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rtc.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rtc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dcmi.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dcmi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS my files\include\event_groups.h" lastModified="155ac04b6b0">
+         <include file="..\..\..\FreeRTOS my files\include\timers.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dbgmcu.c" lastModified="155ac04b6b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dbgmcu.h"/>
+      </source>
+   </includePath>
+</dependencies>
